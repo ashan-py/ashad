@@ -1,23 +1,24 @@
-import turtle
+
 from turtle import *
 import time
-num = 0
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/pokeball.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/jiwoo_usual.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/jiwoo_catch.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/obak.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/pikka.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/pielee.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/kkobugi.gif")
-register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/isanghaessi.gif")
+
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/ball/pokeball.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_usual.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_catch.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/obaksa/obak.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pikkachu/pikkausual.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pielee/pieleeusual.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/kkobugi/kkobugiususal.gif")
+register_shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/isanghaessi/isanghaessiusual.gif")
 
 class obk:
     def __init__(self):
         self.obak = Turtle()
         self.obak.hideturtle()
-        self.obak.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/obak.gif")
+        self.obak.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/obaksa/obak.gif")
         self.obak.penup()
     def pokechoose(self):
+        reset()
         yum = 0
         global mypoke
         global user
@@ -51,7 +52,7 @@ class obk:
 class trainer:
     def __init__(self):
         self.jiwoo = Turtle()
-        self.jiwoo.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/jiwoo_usual.gif")
+        self.jiwoo.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_usual.gif")
         self.jiwoo.penup()
         self.jiwoo.speed(50)
 
@@ -60,11 +61,11 @@ class trainer:
         nu= num%2
         ball = pokeball()
         if nu == 0:
-            self.jiwoo.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/jiwoo_catch.gif")
+            self.jiwoo.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_catch.gif")
             tnx = self.jiwoo.xcor()
             tny = self.jiwoo.ycor()
             ball.open(tnx,tny)
-            self.jiwoo.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/jiwoo_usual.gif")
+            self.jiwoo.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_usual.gif")
         elif nu == 1:
             tnx = self.jiwoo.xcor()
             tny = self.jiwoo.ycor()
@@ -75,7 +76,7 @@ class pokeball:
         self.ball = Turtle()
         self.ball.hideturtle()
         self.ball.penup()
-        self.ball.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/pokeball.gif")
+        self.ball.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/ball/pokeball.gif")
 
     def open(self,x,y):
         self.ball.goto(x,y)
@@ -102,7 +103,7 @@ class pikachu:
         self.pika = Turtle()
         self.pika.hideturtle()
         self.pika.penup()
-        self.pika.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/pikka.gif")
+        self.pika.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pikkachu/pikkausual.gif")
 
 
 class pielee:
@@ -110,21 +111,21 @@ class pielee:
         self.pie = Turtle()
         self.pie.hideturtle()
         self.pie.penup()
-        self.pie.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/pielee.gif")
+        self.pie.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pielee/pieleeusual.gif")
 
 class kkobugi:
     def __init__(self):
         self.kkobug = Turtle()
         self.kkobug.hideturtle()
         self.kkobug.penup()
-        self.kkobug.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/kkobugi.gif")
+        self.kkobug.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/kkobugi/kkobugiususal.gif")
 
 class isanghaessi:
     def __init__(self):
         self.isang = Turtle()
         self.isang.hideturtle()
         self.isang.penup()
-        self.isang.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/isanghaessi.gif")
+        self.isang.shape("/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/isanghaessi/isanghaessiusual.gif")
 
 
 
@@ -146,6 +147,8 @@ def right():
 def poke():
     user.traingo()
 def resett():
+    global num
+    num = 0
     o = obk()
     o.pokechoose()
 
