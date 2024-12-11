@@ -120,24 +120,24 @@
 # print(momCar)
 # print(myCar)
 #
-from turtle import *
-import random
-obakgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/obaksa/obak.gif"
-pokeballgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/ball/pokeball.gif"
-jiwoo_usualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_usual.gif"
-jiwoo_catchgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_catch.gif"
-pikkausualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pikkachu/pikkausual.gif"
-pieleeusualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pielee/pieleeusual.gif"
-kkobugiususalgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/kkobugi/kkobugiususal.gif"
-isanghaessiusualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/isanghaessi/isanghaessiusual.gif"
-register_shape(pokeballgif)
-register_shape(jiwoo_usualgif)
-register_shape(jiwoo_catchgif)
-register_shape(obakgif)
-register_shape(pikkausualgif)
-register_shape(pieleeusualgif)
-register_shape(kkobugiususalgif)
-register_shape(isanghaessiusualgif)
+# from turtle import *
+# import random
+# obakgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/obaksa/obak.gif"
+# pokeballgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/ball/pokeball.gif"
+# jiwoo_usualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_usual.gif"
+# jiwoo_catchgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/human/jiwoo/jiwoo_catch.gif"
+# pikkausualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pikkachu/pikkausual.gif"
+# pieleeusualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/pielee/pieleeusual.gif"
+# kkobugiususalgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/kkobugi/kkobugiususal.gif"
+# isanghaessiusualgif = "/Users/kangbyeongjin/Desktop/me/Github/git_python/img/poke/monster/isanghaessi/isanghaessiusual.gif"
+# register_shape(pokeballgif)
+# register_shape(jiwoo_usualgif)
+# register_shape(jiwoo_catchgif)
+# register_shape(obakgif)
+# register_shape(pikkausualgif)
+# register_shape(pieleeusualgif)
+# register_shape(kkobugiususalgif)
+# register_shape(isanghaessiusualgif)
 # class monster():
 #     suv = 0
 #     monster_list = [{"name": "피카츄", "image": pikkausualgif,
@@ -187,53 +187,206 @@ register_shape(isanghaessiusualgif)
 #
 #
 # mainloop()
+#
+#
+# class monster():
+#     suv = []
+#     userpk = []
+#     monster_list = [{"name": "피카츄", "image": pikkausualgif,
+#                      "hp": 100, "type": "전기"},
+#                     {"name": "파이리", "image": pieleeusualgif,
+#                      "hp": 100, "type": "불"},
+#                     {"name": "꼬부기", "image": kkobugiususalgif,
+#                      "hp": 100, "type": "물"},
+#                     {"name": "이상해씨", "image": isanghaessiusualgif,
+#                      "hp": 100, "type": "풀"}
+#                     ]
+#     def create(self, name):
+#         for n in monster.monster_list:
+#             if n["name"] == name:
+#                 self.name = n["name"]
+#                 self.hp = n["hp"]
+#                 self.type = n["type"]
+#                 self.shape = n["image"]
+#         self.turtle = Turtle()
+#         self.turtle.penup()
+#         self.turtle.shape(self.shape)
+#
+#     def survivur(self):
+#         while len(self.suv) < 6:
+#             nm = (random.choice(self.monster_list))["name"]
+#             rp = monster()  # 새로운 monster 인스턴스를 생성
+#             rp.create(nm)  # 'create' 메서드에서 포켓몬 이름을 전달
+#             rp.turtle.goto(random.randint(-300, 300), random.randint(-300, 300))
+#             self.suv.append(rp)
+#             self.loop(rp.turtle)
+#             print(self.suv)
+#         ontimer(lambda: self.survivur,1000)
+#     def loop(self,tur):
+#         do = [0, 90, 180, 270]
+#         rando = random.choice(do)
+#         tur.setheading(rando)
+#         tur.forward(10)
+#         ontimer(lambda: self.loop(tur), 1000)
+#
+#
+#
+#
+#
+# mon = monster()
+# mon.survivur()  # 'survivur' 메서드를 호출
+#
+# mainloop()
 
 
-class monster():
-    suv = []
-    userpk = []
-    monster_list = [{"name": "피카츄", "image": pikkausualgif,
-                     "hp": 100, "type": "전기"},
-                    {"name": "파이리", "image": pieleeusualgif,
-                     "hp": 100, "type": "불"},
-                    {"name": "꼬부기", "image": kkobugiususalgif,
-                     "hp": 100, "type": "물"},
-                    {"name": "이상해씨", "image": isanghaessiusualgif,
-                     "hp": 100, "type": "풀"}
-                    ]
-    def create(self, name):
-        for n in monster.monster_list:
-            if n["name"] == name:
-                self.name = n["name"]
-                self.hp = n["hp"]
-                self.type = n["type"]
-                self.shape = n["image"]
-        self.turtle = Turtle()
-        self.turtle.penup()
-        self.turtle.shape(self.shape)
+import random
+from tkinter import *
 
-    def survivur(self):
-        while len(self.suv) < 6:
-            nm = (random.choice(self.monster_list))["name"]
-            rp = monster()  # 새로운 monster 인스턴스를 생성
-            rp.create(nm)  # 'create' 메서드에서 포켓몬 이름을 전달
-            rp.turtle.goto(random.randint(-300, 300), random.randint(-300, 300))
-            self.suv.append(rp)
-            self.loop(rp.turtle)
-            print(self.suv)
-        ontimer(lambda: self.survivur,1000)
-    def loop(self,tur):
-        do = [0, 90, 180, 270]
-        rando = random.choice(do)
-        tur.setheading(rando)
-        tur.forward(10)
-        ontimer(lambda: self.loop(tur), 1000)
+class Sprite:
+    def __init__(self, canvas, item):
+        self.canvas = canvas
+        self.item = item
+        self.speedx = 0
+        self.speedy = 0
 
+    def get_coords(self):
+        return self.canvas.coords(self.item)
 
+    def move(self):
+        self.canvas.move(self.item, self.speedx, self.speedy)
 
+    def delete(self):
+        self.canvas.delete(self.item)
 
+class Bullet(Sprite):
+    def __init__(self, canvas, x, y):
+        self.width = 10
+        self.height = 30
+        item = canvas.create_rectangle(
+            x - self.width / 2,
+            y - self.height,
+            x + self.width / 2,
+            y,
+            fill="red",
+        )
+        super().__init__(canvas, item)
+        self.speedy = -10
 
-mon = monster()
-mon.survivur()  # 'survivur' 메서드를 호출
+class Plane(Sprite):
+    def __init__(self, canvas, w, h, x, y):
+        self.width = w
+        self.height = h
+        item = canvas.create_rectangle(
+            x - self.width / 2,
+            y - self.height / 2,
+            x + self.width / 2,
+            y + self.height / 2,
+            fill="blue",
+        )
+        super().__init__(canvas, item)
 
-mainloop()
+class Enemy(Sprite):
+    def __init__(self, canvas, x, y):
+        self.width = 40
+        self.height = 40
+        item = canvas.create_rectangle(
+            x - self.width / 2,
+            y - self.height / 2,
+            x + self.width / 2,
+            y + self.height / 2,
+            fill="yellow",
+        )
+        super().__init__(canvas, item)
+        self.speedy = 5
+
+class ShootingGame(Frame):
+    def __init__(self, root):
+        super().__init__(root)
+        self.width = 300
+        self.height = 480
+        self.canvas = Canvas(
+            self,
+            bg="black",
+            width=self.width,
+            height=self.height,
+        )
+        self.canvas.pack()
+        self.pack()
+
+        self.shapes = {}
+
+        # Plane 생성
+        self.plane = Plane(self.canvas, 50, 20, self.width / 2, self.height - 50)
+        self.shapes[self.plane.item] = self.plane
+
+        # 이벤트 바인딩
+        self.canvas.focus_set()
+        self.canvas.bind("<Motion>", self.move_plane)
+
+        # 총알과 적 관리를 위한 리스트
+        self.bullets = []
+        self.enemies = []
+
+        # 반복 실행 설정
+        self.spawn_enemy()
+        self.shoot_bullet()
+        self.update_game()
+
+    def move_plane(self, event):
+        x = max(event.x, self.plane.width / 2)
+        x = min(x, self.width - self.plane.width / 2)
+        self.plane.canvas.coords(
+            self.plane.item,
+            x - self.plane.width / 2,
+            self.height - 70,
+            x + self.plane.width / 2,
+            self.height - 50,
+        )
+
+    def shoot_bullet(self):
+        x, y = self.plane.get_coords()[:2]
+        bullet = Bullet(self.canvas, x + self.plane.width / 2, y)
+        self.bullets.append(bullet)
+        self.shapes[bullet.item] = bullet
+        self.after(1000, self.shoot_bullet)
+
+    def spawn_enemy(self):
+        x = random.randint(20, self.width - 20)
+        enemy = Enemy(self.canvas, x, 20)
+        self.enemies.append(enemy)
+        self.shapes[enemy.item] = enemy
+        self.after(2000, self.spawn_enemy)
+
+    def update_game(self):
+        for bullet in self.bullets[:]:
+            bullet.move()
+            if bullet.get_coords()[1] < 0:
+                bullet.delete()
+                self.bullets.remove(bullet)
+
+        for enemy in self.enemies[:]:
+            enemy.move()
+            if enemy.get_coords()[3] > self.height:
+                enemy.delete()
+                self.enemies.remove(enemy)
+
+        # 충돌 체크
+        for bullet in self.bullets[:]:
+            for enemy in self.enemies[:]:
+                if self.check_collision(bullet, enemy):
+                    bullet.delete()
+                    enemy.delete()
+                    self.bullets.remove(bullet)
+                    self.enemies.remove(enemy)
+                    break
+
+        self.after(50, self.update_game)
+
+    def check_collision(self, sprite1, sprite2):
+        x1, y1, x2, y2 = sprite1.get_coords()
+        a1, b1, a2, b2 = sprite2.get_coords()
+        return not (x2 < a1 or x1 > a2 or y2 < b1 or y1 > b2)
+
+window = Tk()
+game = ShootingGame(window)
+window.mainloop()
