@@ -1,0 +1,3 @@
+/Users/kangbyeongjin/Desktop/나다/Github/c/cLanPrac/cmake-build-debug/CMakeFiles/cLanPrac.dir
+/Users/kangbyeongjin/Desktop/나다/Github/c/cLanPrac/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kangbyeongjin/Desktop/나다/Github/c/cLanPrac/cmake-build-debug/CMakeFiles/rebuild_cache.dir
