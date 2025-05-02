@@ -7,9 +7,9 @@ public class Grading {
         Scanner scn = new Scanner(System.in);
         System.out.print("Enter your score: ");
         int score = scn.nextInt();
-        score = score/10;
+        score/=10;
         switch(score) {
-            case 9:
+            case 10: case 9:
                 grade = 'A';
                 break;
             case 8:
