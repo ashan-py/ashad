@@ -8,26 +8,30 @@ public class Grading {
         System.out.print("Enter your score: ");
         int score = scn.nextInt();
         score/=10;
-        switch(score) {
-            case 10: case 9:
-                grade = 'A';
-                break;
-            case 8:
-                grade = 'B';
-                break;
-            case 7:
-                grade = 'C';
-                break;
-            case 6:
-                grade = 'D';
-                break;
-            default:
-                grade = 'F';
-       
-        }
+        grade = decide(score);
         System.out.println("당신의 학점은 "+grade+"입니다.");
         
         scn.close();
     }
+    static char decide(int score) {
+        
+        switch(score) {
+        case 10: case 9:
+            return 'A';
+            
+        case 8:
+            return 'B';
+        case 7:
+            return 'C';
+            
+        case 6:
+            return 'D';
+            
+        default:
+            return 'F';
+
+        }
+    }
 
 }
+
