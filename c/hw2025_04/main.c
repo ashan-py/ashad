@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
-#include "p_01.c";
+
+#include "argtest.c";
 // #include "p_02.c";
 // #include "p_03.c";
 // #include "p_04.c";
@@ -31,29 +31,20 @@ int main(void) {
 
 
 
-    //
-    // void p_01();
-    // void p_02();
-    // void p_03();
-    // void p_04();
-    // void p_05();
-    // void p_06();
 
 
 
-    int main(void) {
-        p_01();
-        // p_02();
-        // p_03();
-        // p_04();
-        // p_05();
-        // p_06();
-        // p_07();
-        // p_08();
-        // p_09();
-        // p_10();
+int main(void) {
 
-        return 0;
+    // p_02();
+    // p_03();
+    // p_04();
+    // p_05();
+    // p_06();
+    // p_07();
+    // p_08();
+    // p_09();
+    // p_10();
 
-    }
+    return 0;
 }
