@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">secondApp</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_medicine">MedicineActivity</string>
+    <string name="title_activity_home_route">HomeRouteActivity</string>
+    <string name="title_activity_emergency">EmergencyActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>
