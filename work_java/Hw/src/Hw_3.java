@@ -1,40 +1,46 @@
-import java.util.Scanner;
+//1~100 숫자 입력받고 큰지 작은지 알려줘서 맞추는 게임
+
+import javax.swing.JOptionPane;
 
 public class Hw_3 {
-    static int[] makeAry(int len) {
-        int[] intAry = new int[len];
-        
-        Scanner scn = new Scanner(System.in);
-        for (int i:intAry) {
-            System.out.print("정수 입력하시오 "+(i+1) +"번째 pos int of 5 insts: ");
-            i = scn.nextInt();
-            
-        }
-        scn.close();
-        return intAry;
-      }
 
     public static void main(String[] args) {
-        int len = 5;
-        int[] intAry;
-        intAry = makeAry(len);
+        // 1~100 임이의 정수 생성
+        int answer;
+        answer = (int)(Math.random() * 100) + 1;
+        System.out.print(answer);
         
-        System.out.print("[ ");
-        for (int i:intAry) {
-            System.out.print(i+", ");
-        }
-        System.out.println("]");
-        
-        int max=0; 
-        for (int i: intAry) {
-            if (i > max) {
-                max = i;
+        int input = 0; //사용자가 입력한 숫
+        String tmp = "";//
+        int cnt = 0;//시도한 횟수
+
+
+
+     do {
+            cnt++;
+            tmp = JOptionPane.showInputDialog("input a int(1~100), Enter -1 to stop");
+            if(tmp == null || tmp.equals("-1") || tmp.equals("") ) { //사용자가 -1, enter 입력하면 실행종료 
+                System.out.print("bye~");
+                break;
             }
-        }
-        System.out.print(max);
+           System.out.println("input value = "+tmp);
+           try {
+               input = Integer.parseInt(tmp);
+           } catch (NumberFormatException e) {
+               System.out.println("invalid input! please input a valid integer.");
+               continue;
+           }
+           
+           if (input > answer)
+               System.out.println("the value is large, re- input a small value T.T");
+           else if(input < answer)
+               System.out.println("the value is small, re- input a large value T.T");
+           else {
+               System.out.println("congratulations ^.^ try cnt = "+cnt);
+               break;
+           }
+        }while(true);
+
     }
 
-
-    }
-
-
+}

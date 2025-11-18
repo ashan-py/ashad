@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF6F0"> <!-- 배경색 통일 -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- 🔙 돌아가기 버튼 추가 -->
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:text="◀ 돌아가기"
+            android:backgroundTint="#A9F66452"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전화번호"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_guardian_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="보호자 이름"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_guardian_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="보호자 전화번호"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="비고"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:backgroundTint="#A9F66452"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

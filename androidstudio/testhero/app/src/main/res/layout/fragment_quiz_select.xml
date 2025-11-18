@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FAF4EE">
+
+    <Button
+        android:id="@+id/button_game1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기억력 테스트"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:outlineProvider="background"
+        android:clipToOutline="true" />
+
+    <Button
+        android:id="@+id/button_game2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="반응력 테스트"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:outlineProvider="background"
+        android:clipToOutline="true" />
+
+    <Button
+        android:id="@+id/button_game3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시각력 테스트"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:outlineProvider="background"
+        android:clipToOutline="true" />
+
+    <Button
+        android:id="@+id/button_game4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="집중력 테스트"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:outlineProvider="background"
+        android:clipToOutline="true" />
+</LinearLayout>

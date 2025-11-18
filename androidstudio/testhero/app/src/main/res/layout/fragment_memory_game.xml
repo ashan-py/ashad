@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F9F9F9">
+
+    <TextView
+        android:id="@+id/text_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="숫자 표시"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자를 띄어쓰기해서 입력 (예: 5 2 8)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제출"
+        android:backgroundTint="#A9F66452" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔁 다시 시도하기"
+        android:visibility="gone"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button_back_to_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏠 메뉴로 돌아가기"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

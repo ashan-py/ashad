@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_left"
+        android:icon="@drawable/quiz_1"
+        android:title="진단/퀴즈"
+        android:iconTint="@null" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_1"
+        android:title="홈"
+        android:iconTint="@null" />
+
+    <!-- 기존 '오른쪽'을 GPS로 전환 -->
+    <item
+        android:id="@+id/nav_gps"
+        android:icon="@drawable/gps_1"
+        android:title="이동경로 복기"
+        android:iconTint="@null" />
+
+</menu>
